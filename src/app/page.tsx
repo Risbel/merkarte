@@ -41,7 +41,12 @@ export default function Home() {
                   <div className="border-b-2 border-black -translate-y-2 flex-1" />
                 </div>
                 <div>
-                  <h1 className="text-3xl md:text-6xl tracking-wider">MERKARTE</h1>
+                  <h1 className="text-3xl md:text-6xl tracking-wider">
+                    <span className="inline-flex animate-background-shine bg-[linear-gradient(110deg,#000000,45%,#146bf8,55%,#000000)] bg-[length:250%_100%] bg-clip-text text-transparent">
+                      {" "}
+                      MERKARTE
+                    </span>
+                  </h1>
                 </div>
               </motion.div>
               <div className="flex justify-center px-2 md:px-8">

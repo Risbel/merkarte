@@ -12,7 +12,7 @@ const FormConfirm = () => {
   const ref = useRef<HTMLFormElement>(null);
 
   return (
-    <div className="border-8 shadow-md border-white">
+    <div className="border-4 shadow-md border-white">
       <div className="flex flex-col border-8 shadow-inner shadow-slate-500 border-white p-4 md:p-6 bg-white/40 backdrop-blur-3xl">
         <div className="flex flex-col w-full mb-4">
           <p className="text-md md:text-2xl text-center text-primary font-semibold">Confirmar asistencia</p>
