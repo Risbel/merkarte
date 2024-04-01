@@ -26,7 +26,7 @@ const TextGenerateEffect = ({ words, className }: { words: string; className?: s
           return (
             <motion.span
               key={word + idx}
-              className="text-center dark:text-black text-white font-normal opacity-0 text-xl font-raleway tracking-widest"
+              className="text-center dark:text-black text-white font-normal opacity-0 text-sm md:text-xl font-raleway tracking-widest"
             >
               {word.startsWith("*") ? (
                 <span className="font-semibold">{word.replace("*", "")}</span>
