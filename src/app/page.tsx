@@ -5,6 +5,7 @@ import TextHero from "./components/TextHero";
 import ButtonConfirm from "./components/buttons/ButtonConfirm";
 import { motion } from "framer-motion";
 import LogoCarousel from "./components/carousel";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
@@ -64,6 +65,7 @@ export default function Home() {
         </div>
       </div>
       <LogoCarousel />
+      <Footer />
     </main>
   );
 }
