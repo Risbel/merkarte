@@ -17,10 +17,10 @@ export default function Home() {
         height={1280}
         width={720}
       />
-      <div className="relative z-20 p-4 md:p-12">
+      <div className="relative z-20 p-4 md:p-12 pb-0">
         <div className="h-full border-2 mg:border-[8px] border-white shadow-xl">
           <div className="h-full border-[8px] border-white shadow-inner shadow-gray-600 bg-white/50">
-            <div className="flex gap-4 flex-col justify-between items-center pb-4">
+            <div className="flex gap-2 md:gap-4 flex-col justify-between items-center pb-4">
               <motion.div
                 className="flex flex-col justify-between items-center gap-4 w-full"
                 initial={{ opacity: 0, y: -50 }}
@@ -48,7 +48,7 @@ export default function Home() {
                 <TextHero />
               </div>
               <motion.div
-                className="flex flex-col gap-6 items-center"
+                className="flex flex-col gap-4 items-center"
                 initial={{ opacity: 0, y: 300 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
