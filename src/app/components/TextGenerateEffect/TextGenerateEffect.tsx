@@ -1,4 +1,3 @@
-"use client";
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/utils/cn";
@@ -14,7 +13,7 @@ const TextGenerateEffect = ({ words, className }: { words: string; className?: s
       },
       {
         duration: 0.5,
-        delay: stagger(0.05),
+        delay: stagger(0.02),
       }
     );
   }, [scope.current]);
@@ -26,7 +25,7 @@ const TextGenerateEffect = ({ words, className }: { words: string; className?: s
           return (
             <motion.span
               key={word + idx}
-              className="text-center dark:text-black text-white font-normal opacity-0 text-sm md:text-xl font-raleway tracking-widest"
+              className="text-center text-black font-normal opacity-0 text-sm md:text-xl font-raleway tracking-widest"
             >
               {word.startsWith("*") ? (
                 <span className="font-semibold">{word.replace("*", "")}</span>
