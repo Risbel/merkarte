@@ -1,5 +1,46 @@
 export const useCarouselBrands = () => [
   {
+    imageUrl: "/logo-goma.svg",
+    alt: "",
+    width: 250,
+    height: 250,
+    text: "",
+    textSize: "",
+  },
+  {
+    imageUrl: "/AyuntamientoDeAdeje.svg",
+    alt: "",
+    width: 250,
+    height: 250,
+    text: "",
+    textSize: "",
+  },
+  {
+    imageUrl: "/CabildoDeTenerife.svg",
+    alt: "",
+    width: 150,
+    height: 150,
+    text: "",
+    textSize: "",
+  },
+
+  {
+    imageUrl: "/MERCARTE-logo.svg",
+    alt: "",
+    width: 150,
+    height: 150,
+    text: "",
+    textSize: "",
+  },
+  {
+    imageUrl: "/logo-goma.svg",
+    alt: "",
+    width: 250,
+    height: 250,
+    text: "",
+    textSize: "",
+  },
+  {
     imageUrl: "/AyuntamientoDeAdeje.svg",
     alt: "",
     width: 250,
@@ -16,15 +57,7 @@ export const useCarouselBrands = () => [
     textSize: "",
   },
   {
-    imageUrl: "/AyuntamientoDeAdeje.svg",
-    alt: "",
-    width: 250,
-    height: 250,
-    text: "",
-    textSize: "",
-  },
-  {
-    imageUrl: "/CabildoDeTenerife.svg",
+    imageUrl: "/MERCARTE-logo.svg",
     alt: "",
     width: 150,
     height: 150,
