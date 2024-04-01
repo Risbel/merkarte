@@ -27,7 +27,7 @@ const FormConfirm = () => {
           }}
           className="flex flex-col w-full"
         >
-          <input type="text" hidden defaultValue={"ba688a61-71bb-4677-b180-8d40f3c82796"} name="event" />
+          <input type="text" hidden defaultValue={"cb1196fd-cb0b-4a04-b443-e0caf127315d"} name="event" />
           <div className="flex gap-2">
             <div className="flex flex-col w-2/5">
               <label className="pl-2 text-xs text-primary" htmlFor="first_name">

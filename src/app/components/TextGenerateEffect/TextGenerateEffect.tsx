@@ -7,7 +7,7 @@ const TextGenerateEffect = ({ words, className }: { words: string; className?: s
   let wordsArray = words.split(" ");
   useEffect(() => {
     animate(
-      "span",
+      "div",
       {
         opacity: 1,
       },
@@ -23,7 +23,7 @@ const TextGenerateEffect = ({ words, className }: { words: string; className?: s
       <motion.div ref={scope} className="flex flex-wrap justify-center gap-[5px]">
         {wordsArray.map((word, idx) => {
           return (
-            <motion.span
+            <motion.div
               key={word + idx}
               className="text-center text-black font-normal opacity-0 text-sm md:text-xl font-raleway tracking-widest"
             >
@@ -32,7 +32,7 @@ const TextGenerateEffect = ({ words, className }: { words: string; className?: s
               ) : (
                 <span>{word}</span>
               )}
-            </motion.span>
+            </motion.div>
           );
         })}
       </motion.div>
