@@ -4,21 +4,22 @@ import Image from "next/image";
 import TextHero from "./components/TextHero";
 import ButtonConfirm from "./components/buttons/ButtonConfirm";
 import { motion } from "framer-motion";
+import LogoCarousel from "./components/carousel";
 
 export default function Home() {
   return (
-    <main className="relative h-screen w-screen overflow-hidden overflow-y-scroll">
+    <main className="relative h-screen overflow-hidden overflow-y-scroll">
       <img
-        className="fixed -z-10 object-cover w-full h-full"
+        className="fixed -z-10 object-cover w-screen h-screen"
         src={"/abstrack_backhround_blue__generated.jpg"}
         alt="background merkarte"
         height={1280}
         width={720}
       />
-      <div className="relative z-20 h-screen p-4 md:p-12">
+      <div className="relative z-20 p-4 md:p-12">
         <div className="h-full border-2 mg:border-[8px] border-white shadow-xl">
           <div className="h-full border-[8px] border-white shadow-inner shadow-gray-600 bg-white/50">
-            <div className="flex flex-col justify-between items-center h-full pb-4">
+            <div className="flex gap-4 flex-col justify-between items-center pb-4">
               <motion.div
                 className="flex flex-col justify-between items-center gap-4 w-full"
                 initial={{ opacity: 0, y: -50 }}
@@ -62,6 +63,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <LogoCarousel />
     </main>
   );
 }

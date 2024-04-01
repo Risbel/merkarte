@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${raleway.variable}`}>
+    <html lang="es" className={`${raleway.variable}`}>
       <body className={inter.className}>{children}</body>
     </html>
   );

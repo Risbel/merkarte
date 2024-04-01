@@ -18,6 +18,7 @@ const config: Config = {
       },
       animation: {
         "background-shine": "background-shine 6s linear infinite",
+        "loop-scroll": "loop-scroll 25s linear infinite",
       },
       keyframes: {
         "background-shine": {
@@ -27,6 +28,10 @@ const config: Config = {
           to: {
             backgroundPosition: "-200% 0",
           },
+        },
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
         },
       },
     },
