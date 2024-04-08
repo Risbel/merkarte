@@ -13,7 +13,7 @@ const Confirm = async () => {
         <span className="text-xl font-semibold text-white"> back</span>
       </Link>
 
-      <div className="flex w-full justify-center items-start pt-8">
+      <div className="flex w-full justify-center items-start pt-16 md:pt-8">
         <FormConfirm />
       </div>
     </div>

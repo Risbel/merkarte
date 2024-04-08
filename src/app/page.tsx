@@ -6,20 +6,29 @@ import ButtonConfirm from "./components/buttons/ButtonConfirm";
 import { motion } from "framer-motion";
 import LogoCarousel from "./components/carousel";
 import Footer from "./components/footer/Footer";
+import Circle from "./components/circle";
 
 export default function Home() {
   return (
     <main className="relative h-screen overflow-hidden overflow-y-scroll">
+      <Circle h={260} w={260} border={40} borderColor="#E52629" translateX={-150} translateY={-150} />
+      <Circle h={80} w={80} border={20} borderColor="#E52629" translateX={20} translateY={120} />
+
+      <div className="absolute h-screen w-screen flex justify-end items-end">
+        <Circle h={80} w={80} border={20} borderColor="#E52629" translateX={-120} translateY={-300} />
+        <Circle h={200} w={200} border={40} borderColor="#E52629" translateX={-120} translateY={-200} />
+      </div>
+
       <img
         className="fixed -z-10 object-cover w-screen h-screen"
-        src={"/abstrack_backhround_blue__generated.jpg"}
+        src={"/bg-patern-mercarte.png"}
         alt="background merkarte"
         height={1280}
         width={720}
       />
       <div className="relative z-20 p-4 md:p-12 pb-0">
         <div className="h-full border-2 mg:border-[8px] border-white shadow-xl">
-          <div className="h-full border-[8px] border-white shadow-inner shadow-gray-600 bg-white/50">
+          <div className="h-full border-[8px] border-white shadow-inner shadow-gray-600 bg-white/80">
             <div className="flex gap-2 md:gap-4 flex-col justify-between items-center pb-4">
               <motion.div
                 className="flex flex-col justify-between items-center gap-4 w-full"
@@ -70,6 +79,7 @@ export default function Home() {
         </div>
       </div>
       <LogoCarousel />
+
       <Footer />
     </main>
   );
