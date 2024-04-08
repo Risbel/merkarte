@@ -1,5 +1,13 @@
 export const useCarouselBrands = () => [
   {
+    imageUrl: "/JOVEN-EDUCA-LOGO.svg",
+    alt: "JOVEN EDUCA LOGO",
+    width: 250,
+    height: 250,
+    text: "",
+    textSize: "",
+  },
+  {
     imageUrl: "/logo-goma.svg",
     alt: "",
     width: 250,
@@ -29,6 +37,14 @@ export const useCarouselBrands = () => [
     alt: "",
     width: 150,
     height: 150,
+    text: "",
+    textSize: "",
+  },
+  {
+    imageUrl: "/JOVEN-EDUCA-LOGO.svg",
+    alt: "JOVEN EDUCA LOGO",
+    width: 250,
+    height: 250,
     text: "",
     textSize: "",
   },
