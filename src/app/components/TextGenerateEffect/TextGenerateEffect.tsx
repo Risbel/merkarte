@@ -20,18 +20,25 @@ const TextGenerateEffect = ({ words, className }: { words: string; className?: s
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope} className="flex flex-wrap justify-center gap-[5px]">
+      <motion.div ref={scope} className="flex flex-wrap justify-center w-[80%] gap-[5px]">
         {wordsArray.map((word, idx) => {
           return (
             <motion.div
               key={word + idx}
-              className="text-center text-black font-normal opacity-0 text-sm md:text-xl font-raleway tracking-widest"
+              className="text-center text-black font-semibold opacity-0 text-sm md:text-xl font-raleway tracking-wider"
             >
               {word.startsWith("*") ? (
-                <span className="font-semibold">{word.replace("*", "")}</span>
+                <span className="font-bold">{word.replace("*", "")}</span>
+              ) : word.startsWith("$") ? (
+                <span className="font-extrabold">{word.replace("$", "")}</span>
               ) : (
-                <span>{word}</span>
+                <span>{word.replace("^", "")}</span>
               )}
+              {word.startsWith("^") ? (
+                <div className="w-screen">
+                  <span>{word.replace("^", "")}</span>
+                </div>
+              ) : null}
             </motion.div>
           );
         })}
@@ -41,9 +48,7 @@ const TextGenerateEffect = ({ words, className }: { words: string; className?: s
 
   return (
     <div className={cn("font-bold", className)}>
-      <div className="mt-4">
-        <div className=" dark:text-white text-black text-2xl leading-snug tracking-wide">{renderWords()}</div>
-      </div>
+      <div className="flex justify-center text-black text-2xl leading-snug tracking-wide w-screen">{renderWords()}</div>
     </div>
   );
 };

@@ -27,7 +27,7 @@ const GuestsInput = ({ inputList, setInputList }: { inputList: Person[]; setInpu
     <div>
       {inputList.length === 0 && (
         <button
-          className="flex gap-1 items-center border rounded-lg px-2 py-1 my-2 pr-2 bg-blue-900 hover:bg-blue-800 transition-colors"
+          className="flex gap-1 items-center border rounded-lg px-2 py-1 my-2 pr-2 bg-black hover:bg-red-950 transition-colors"
           onClick={() => handleaddclick()}
         >
           <PlusCircle className="stroke-white" />
@@ -78,7 +78,7 @@ const GuestsInput = ({ inputList, setInputList }: { inputList: Person[]; setInpu
             </div>
             {inputList.length - 1 === index && (
               <button
-                className="flex gap-1 items-center border rounded-full my-2 bg-blue-400 hover:bg-blue-500 transition-colors"
+                className="flex gap-1 items-center border rounded-full my-2 bg-green-400 hover:bg-green-300 transition-colors"
                 onClick={() => handleaddclick()}
               >
                 <PlusCircle className="stroke-secondary" />

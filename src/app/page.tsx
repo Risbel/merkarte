@@ -51,14 +51,13 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className="text-3xl md:text-6xl tracking-wider">
-                    <span className="inline-flex animate-background-shine bg-[linear-gradient(110deg,#000000,45%,#146bf8,55%,#000000)] bg-[length:250%_100%] bg-clip-text text-transparent">
-                      {" "}
+                    <span className="font-bold inline-flex animate-background-shine bg-[linear-gradient(110deg,#000000,45%,#981212,55%,#000000)] bg-[length:250%_100%] bg-clip-text text-transparent">
                       MERKARTE
                     </span>
                   </h1>
                 </div>
               </motion.div>
-              <div className="flex justify-center px-2 md:px-8">
+              <div className="flex justify-center px-2 md:px-8 w-screen">
                 <TextHero />
               </div>
               <motion.div
