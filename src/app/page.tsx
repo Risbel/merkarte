@@ -7,10 +7,12 @@ import { motion } from "framer-motion";
 import LogoCarousel from "./components/carousel";
 import Footer from "./components/footer/Footer";
 import Circle from "./components/circle";
+import LinkEncoded from "./components/LinkEncoded";
 
 export default function Home() {
   return (
     <main className="relative h-screen overflow-hidden overflow-y-scroll">
+      <LinkEncoded />
       <Circle h={260} w={260} border={40} borderColor="#E52629" translateX={-150} translateY={-150} />
       <Circle h={80} w={80} border={20} borderColor="#E52629" translateX={20} translateY={120} />
 
